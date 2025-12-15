@@ -279,7 +279,7 @@
 
         // Load saved language preference or detect browser language
         const savedLang = localStorage.getItem('preferredLanguage');
-        const browserLang = navigator.language ? navigator.language.split('-')[0] : 'en';
+        const browserLang = (navigator.language && navigator.language.split('-')[0]) || 'en';
         const initialLang = savedLang || (browserLang === 'sv' ? 'sv' : 'en');
         
         if (initialLang !== 'en') {
