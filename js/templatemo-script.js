@@ -4,8 +4,8 @@ const initBg = (autoplay = true) => {
 
     $.backstretch(bgImgs, {duration: 4000, fade: 500});
 
-    if(!autoplay) {
-      $.backstretch('pause');  
+    if (!autoplay) {
+        $.backstretch('pause');
     }    
 }
 
@@ -30,7 +30,7 @@ const setBgOverlay = () => {
 }
 
 $(document).ready(function () {
-    const autoplayBg = true;	// set Auto Play for Background Images
+    const autoplayBg = true;    // set Auto Play for Background Images
     initBg(autoplayBg);    
     setBgOverlay();
 
