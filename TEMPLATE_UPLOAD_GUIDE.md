@@ -11,9 +11,10 @@ You can manually upload your template files to the repository:
 1. **Extract your zip file** on your local computer
 2. **Clone this repository** locally:
    ```bash
-   git clone https://github.com/jeaksar/qualion-site.git
+   git clone <your-repository-url>
    cd qualion-site
    ```
+   (You can find your repository URL on GitHub by clicking the green "Code" button)
 3. **Replace or add files** from your template:
    - Copy the files from your extracted template into the repository
    - Keep or replace `index.html` as needed
