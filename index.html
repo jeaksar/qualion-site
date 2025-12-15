@@ -151,6 +151,7 @@
 
         @media (max-width: 600px) {
             .container {
+                /* Increased top padding to accommodate language toggle */
                 padding: 60px 25px 40px;
             }
 
@@ -250,7 +251,7 @@
             // Update all translatable elements
             document.querySelectorAll('[data-i18n]').forEach(element => {
                 const key = element.getAttribute('data-i18n');
-                if (translations[lang][key]) {
+                if (translations[lang] && translations[lang][key]) {
                     element.textContent = translations[lang][key];
                 }
             });
@@ -278,7 +279,7 @@
 
         // Load saved language preference or detect browser language
         const savedLang = localStorage.getItem('preferredLanguage');
-        const browserLang = navigator.language.split('-')[0];
+        const browserLang = navigator.language ? navigator.language.split('-')[0] : 'en';
         const initialLang = savedLang || (browserLang === 'sv' ? 'sv' : 'en');
         
         if (initialLang !== 'en') {
