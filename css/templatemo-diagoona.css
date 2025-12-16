@@ -188,9 +188,29 @@ hr { border-top: 1px solid white; }
 }
 
 .tm-site-footer {
-    padding: 40px 0 20px;
+    padding: 30px 0 20px;
     max-width: 660px;
-    font-size: 0.95rem;
+    font-size: 0.85rem;
+}
+
+.tm-footer-company {
+    opacity: 0.8;
+    font-size: 0.8rem;
+}
+
+.tm-footer-links {
+    font-size: 0.8rem;
+}
+
+.tm-footer-sep {
+    margin: 0 8px;
+    opacity: 0.5;
+}
+
+.tm-footer-copyright {
+    font-size: 0.75rem;
+    opacity: 0.6;
+    margin-top: 8px !important;
 }
 
 .tm-col-footer { padding-left: 0; }
@@ -356,4 +376,164 @@ textarea {
     .tm-service-text { margin-top: 20px; }
     .tm-service-img { margin-right: 0; }
     .tm-service-img-r { margin-left: 0; }
+}
+
+/* Language Toggle */
+.tm-lang-toggle {
+    display: flex;
+    gap: 5px;
+    margin-right: 20px;
+}
+
+/* Discreet corner language toggle */
+.tm-lang-toggle-corner {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    gap: 5px;
+    z-index: 100;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+
+.tm-lang-toggle-corner:hover {
+    opacity: 1;
+}
+
+.tm-lang-btn {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.6);
+    padding: 3px 8px;
+    font-size: 0.7rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tm-lang-btn:hover {
+    border-color: white;
+    color: white;
+}
+
+.tm-lang-btn.active {
+    background: rgba(255, 255, 255, 0.9);
+    color: #2C353C;
+    border-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Company Info in Footer */
+.tm-company-info {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.tm-company-info p {
+    line-height: 1.5;
+}
+
+/* Cookie Consent Banner */
+.tm-cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(44, 53, 60, 0.98);
+    padding: 20px;
+    z-index: 9999;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.tm-cookie-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.tm-cookie-content p {
+    margin: 0;
+    flex: 1;
+    min-width: 250px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.tm-cookie-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.tm-cookie-link {
+    color: #9CC;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.tm-cookie-link:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+#cookie-accept {
+    padding: 8px 25px;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .tm-lang-toggle-corner {
+        bottom: 15px;
+        left: 15px;
+    }
+
+    .tm-cookie-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .tm-cookie-content p {
+        min-width: auto;
+    }
+}
+
+/* Privacy Page */
+.tm-privacy-content {
+    max-width: 700px;
+}
+
+.tm-privacy-section h4 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.tm-privacy-section p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+.tm-cookie-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+.tm-cookie-list li {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.tm-cookie-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 6px;
+    height: 6px;
+    background: #9CC;
 }
