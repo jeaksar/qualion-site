@@ -28,7 +28,7 @@ p { line-height: 1.9; }
 /* Site header - keep logo and text on same line */
 .tm-site-header {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     flex-wrap: nowrap;
 }
 
