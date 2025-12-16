@@ -1,19 +1,35 @@
-# qualion-site
+# Qualion Consulting AB Website
 
-Professional website for Qualion Consulting AB
+Professional website for Qualion Consulting AB - Expert testledning, QA konsult och kvalitetssäkring i Uppsala.
 
-## Current Website
+## Features
 
-This is a simple, elegant single-page website with:
+- SEO optimized for Uppsala market (testledning, qa konsult, kvalitetssäkring)
 - Responsive design
-- English/Swedish language toggle
-- Professional purple gradient theme
-- Contact information
+- Security headers (.htaccess)
+- Dynamic copyright year
+- Professional favicon
 
-## Want to Update Your Site?
+## Quick Setup
 
-If you have a template or want to update the website design, please see [TEMPLATE_UPLOAD_GUIDE.md](TEMPLATE_UPLOAD_GUIDE.md) for instructions on how to proceed.
+1. Create missing images:
+   - `images/qualion-og-image.jpg` (1200x630px for social sharing)
+   - `images/qualion-logo.png` (512x512px)
+   - `favicon.ico` (convert favicon.svg)
 
-## Viewing the Site
+2. Deploy to web server with HTTPS
 
-Simply open `index.html` in a web browser to view the site locally.
+3. Submit sitemap.xml to Google Search Console
+
+4. Create Google Business Profile (critical for local ranking!)
+
+## Viewing
+
+Open `index.html` in browser to view locally.
+
+## Contact
+
+Qualion Consulting AB
+- Email: info@qualion.se
+- Location: Uppsala, Sweden
+
