@@ -88,6 +88,9 @@ $(document).ready(function () {
     initLanguage();
     initCookieConsent();
 
+    // Set dynamic copyright year
+    $('#copyright-year').text(new Date().getFullYear());
+
     const bgControl = $('.tm-bg-control');
     bgControl.click(function() {
         bgControl.removeClass('active');
