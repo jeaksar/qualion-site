@@ -99,6 +99,13 @@ $(document).ready(function () {
         setBg(id);
     });
 
+    // Close mobile menu when clicking on a nav link
+    $('.tm-nav-link').on('click', function() {
+        if (window.innerWidth <= 991) { // Bootstrap lg breakpoint
+            $('.navbar-collapse').collapse('hide');
+        }
+    });
+
     $(window).on("backstretch.after", function (e, instance, index) {
         const bgControl = $('.tm-bg-control');
         bgControl.removeClass('active');
