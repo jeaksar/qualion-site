@@ -400,17 +400,17 @@ textarea {
 .tm-lang-toggle-corner {
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    left: 20px;
     display: flex;
     align-items: center;
     gap: 8px;
     z-index: 100;
     opacity: 0.7;
     transition: opacity 0.3s ease;
-    background: rgba(44, 53, 60, 0.8);
+    background: rgba(44, 53, 60, 0.9);
     padding: 8px 12px;
     border-radius: 4px;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
 }
 
 .tm-lang-toggle-corner:hover {
@@ -513,8 +513,26 @@ textarea {
 
 @media (max-width: 768px) {
     .tm-lang-toggle-corner {
-        bottom: 15px;
-        left: 15px;
+        top: 15px;
+        right: 15px;
+        bottom: auto;
+        left: auto;
+        padding: 6px 10px;
+        gap: 6px;
+        font-size: 0.7rem;
+    }
+
+    .tm-lang-icon {
+        font-size: 0.85rem;
+    }
+
+    .tm-lang-btn {
+        font-size: 0.65rem;
+        padding: 2px 4px;
+    }
+
+    .tm-lang-separator {
+        font-size: 0.7rem;
     }
 
     .tm-cookie-content {
