@@ -15,7 +15,13 @@ const setBg = id => {
 
 const setBgOverlay = () => {
     const windowWidth = window.innerWidth;
-    const bgHeight = $('body').height();
+    const bgHeight = Math.max(
+        document.body.scrollHeight,
+        document.body.offsetHeight,
+        document.documentElement.clientHeight,
+        document.documentElement.scrollHeight,
+        document.documentElement.offsetHeight
+    );
     const tmBgLeft = $('.tm-bg-left');
 
     $('.tm-bg').height(bgHeight);
