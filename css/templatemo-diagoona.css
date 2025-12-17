@@ -400,37 +400,53 @@ textarea {
 .tm-lang-toggle-corner {
     position: fixed;
     bottom: 20px;
-    left: 20px;
+    right: 20px;
     display: flex;
-    gap: 5px;
+    align-items: center;
+    gap: 8px;
     z-index: 100;
-    opacity: 0.6;
+    opacity: 0.7;
     transition: opacity 0.3s ease;
+    background: rgba(44, 53, 60, 0.8);
+    padding: 8px 12px;
+    border-radius: 4px;
+    backdrop-filter: blur(5px);
 }
 
 .tm-lang-toggle-corner:hover {
     opacity: 1;
 }
 
+.tm-lang-icon {
+    font-size: 1rem;
+    opacity: 0.8;
+    line-height: 1;
+}
+
+.tm-lang-separator {
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 0.8rem;
+}
+
 .tm-lang-btn {
     background: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    color: rgba(255, 255, 255, 0.6);
-    padding: 3px 8px;
-    font-size: 0.7rem;
+    border: none;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 2px 6px;
+    font-size: 0.75rem;
     cursor: pointer;
     transition: all 0.3s ease;
+    font-family: 'Open Sans', Arial, sans-serif;
 }
 
 .tm-lang-btn:hover {
-    border-color: white;
     color: white;
+    text-decoration: underline;
 }
 
 .tm-lang-btn.active {
-    background: rgba(255, 255, 255, 0.9);
-    color: #2C353C;
-    border-color: rgba(255, 255, 255, 0.9);
+    color: #9CC;
+    font-weight: 600;
 }
 
 /* Company Info in Footer */
