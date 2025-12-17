@@ -99,10 +99,15 @@ $(document).ready(function () {
         setBg(id);
     });
 
+    // Manually handle navbar toggle for mobile
+    $('.navbar-toggler').on('click', function() {
+        $('#navbar-nav').collapse('toggle');
+    });
+
     // Close mobile menu when clicking on a nav link
     $('.tm-nav-link').on('click', function() {
         if (window.innerWidth <= 991) { // Bootstrap lg breakpoint
-            $('.navbar-collapse').collapse('hide');
+            $('#navbar-nav').collapse('hide');
         }
     });
 
