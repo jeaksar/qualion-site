@@ -91,7 +91,7 @@ h4 { font-size: 1.3rem; }
     left: 0;
     right: 0;
     width: 100%;
-    min-height: 100%;
+    height: 100%;
     display: flex;
     z-index: -1000;
 }
@@ -100,14 +100,14 @@ h4 { font-size: 1.3rem; }
 .tm-bg-right {
     position: relative;
     width: 50%;
-    min-height: 100%;
+    height: 100%;
 }
 
 .tm-bg-right { background-color: rgba(0,0,0,0.5); }
 
 .tm-bg-left {
     border-right: 230px solid rgba(0,0,0,0.5);
-    border-bottom: 100vh solid transparent;
+    border-top: 100vh solid transparent;
 }
 
 .tm-bg-controls-wrapper {
