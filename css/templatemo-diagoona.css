@@ -107,7 +107,7 @@ h4 { font-size: 1.3rem; }
 
 .tm-bg-left {
     border-right: 230px solid rgba(0,0,0,0.5);
-    border-bottom: 9999px solid transparent;
+    border-bottom: 100vh solid transparent;
 }
 
 .tm-bg-controls-wrapper {
