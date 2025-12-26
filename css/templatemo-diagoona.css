@@ -404,7 +404,7 @@ textarea {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: 0;
     z-index: 100;
     opacity: 0.7;
     transition: all 0.3s ease;
@@ -427,6 +427,7 @@ textarea {
     height: auto;
     padding: 8px 16px;
     border-radius: 20px;
+    gap: 8px;
 }
 
 .tm-lang-icon {
@@ -443,14 +444,11 @@ textarea {
 .tm-lang-separator {
     color: rgba(255, 255, 255, 0.3);
     font-size: 0.8rem;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    width: 0;
+    display: none;
 }
 
 .tm-lang-toggle-corner.expanded .tm-lang-separator {
-    opacity: 1;
-    width: auto;
+    display: block;
 }
 
 .tm-lang-btn {
@@ -462,15 +460,12 @@ textarea {
     cursor: pointer;
     transition: all 0.3s ease;
     font-family: 'Open Sans', Arial, sans-serif;
-    opacity: 0;
-    width: 0;
-    overflow: hidden;
+    display: none;
     white-space: nowrap;
 }
 
 .tm-lang-toggle-corner.expanded .tm-lang-btn {
-    opacity: 1;
-    width: auto;
+    display: block;
 }
 
 .tm-lang-btn:hover {
