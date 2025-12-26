@@ -49,6 +49,8 @@ h4 { font-size: 1.3rem; }
 }
 
 .tm-logo-img {
+    width: 60px;
+    height: auto;
     transition: opacity 0.6s ease-in-out;
     background-color: rgba(128, 128, 128, 0.25);
     border-radius: 50%;
