@@ -11,6 +11,22 @@ const initBg = (autoplay = true) => {
 
 const setBg = id => {
     $.backstretch('show', id);
+    updateLogo(id);
+}
+
+const updateLogo = (bgIndex) => {
+    const $logo = $('#site-logo');
+    // Background 0 (diagoona-bg-1.jpg) is dark - use inverted (white) logo
+    // Background 1 (diagoona-bg-2.jpg) is light - use dark logo
+    // Background 2 (diagoona-bg-3.jpg) is medium/dark - use inverted (white) logo
+    
+    const logoSrc = (bgIndex === 1) 
+        ? 'images/qualion-logo.png' 
+        : 'images/qualion-logo-inverted.png';
+    
+    $logo.fadeOut(200, function() {
+        $(this).attr('src', logoSrc).fadeIn(200);
+    });
 }
 
 const setBgOverlay = () => {
@@ -136,6 +152,7 @@ $(document).ready(function () {
         bgControl.removeClass('active');
         const current = $(".tm-bg-controls-wrapper").find(`[data-id=${index}]`);
         current.addClass('active');
+        updateLogo(index);
     });
 
     $(window).resize(function() {
