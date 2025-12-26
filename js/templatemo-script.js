@@ -2,7 +2,7 @@ const initBg = (autoplay = true) => {
     const bgImgsNames = ['diagoona-bg-1.jpg', 'diagoona-bg-2.jpg', 'diagoona-bg-3.jpg'];
     const bgImgs = bgImgsNames.map(img => "images/" + img);
 
-    $.backstretch(bgImgs, {duration: 4000, fade: 500});
+    $.backstretch(bgImgs, {duration: 10000, fade: 1500});
 
     if (!autoplay) {
         $.backstretch('pause');
@@ -67,9 +67,23 @@ const initLanguage = () => {
     const savedLang = localStorage.getItem('qualion-lang') || 'en';
     setLanguage(savedLang);
 
+    // Toggle language selector visibility
+    $('.tm-lang-icon').click(function(e) {
+        e.stopPropagation();
+        $('.tm-lang-toggle-corner').toggleClass('expanded');
+    });
+
     $('.tm-lang-btn').click(function() {
         const lang = $(this).data('lang');
         setLanguage(lang);
+        $('.tm-lang-toggle-corner').removeClass('expanded');
+    });
+
+    // Close language selector when clicking outside
+    $(document).click(function(e) {
+        if (!$(e.target).closest('.tm-lang-toggle-corner').length) {
+            $('.tm-lang-toggle-corner').removeClass('expanded');
+        }
     });
 }
 

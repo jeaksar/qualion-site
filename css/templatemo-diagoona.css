@@ -406,26 +406,44 @@ textarea {
     gap: 8px;
     z-index: 100;
     opacity: 0.7;
-    transition: opacity 0.3s ease;
+    transition: all 0.3s ease;
     background: rgba(44, 53, 60, 0.9);
     padding: 8px 12px;
-    border-radius: 4px;
+    border-radius: 20px;
     backdrop-filter: blur(10px);
+    cursor: pointer;
+    overflow: hidden;
+    width: 40px;
 }
 
 .tm-lang-toggle-corner:hover {
     opacity: 1;
 }
 
+.tm-lang-toggle-corner.expanded {
+    width: auto;
+    padding: 8px 16px;
+}
+
 .tm-lang-icon {
-    font-size: 1rem;
-    opacity: 0.8;
+    font-size: 1.1rem;
+    opacity: 0.9;
     line-height: 1;
+    cursor: pointer;
+    flex-shrink: 0;
 }
 
 .tm-lang-separator {
     color: rgba(255, 255, 255, 0.3);
     font-size: 0.8rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    width: 0;
+}
+
+.tm-lang-toggle-corner.expanded .tm-lang-separator {
+    opacity: 1;
+    width: auto;
 }
 
 .tm-lang-btn {
@@ -437,6 +455,15 @@ textarea {
     cursor: pointer;
     transition: all 0.3s ease;
     font-family: 'Open Sans', Arial, sans-serif;
+    opacity: 0;
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.tm-lang-toggle-corner.expanded .tm-lang-btn {
+    opacity: 1;
+    width: auto;
 }
 
 .tm-lang-btn:hover {
@@ -520,10 +547,15 @@ textarea {
         padding: 6px 10px;
         gap: 6px;
         font-size: 0.7rem;
+        width: 35px;
+    }
+
+    .tm-lang-toggle-corner.expanded {
+        padding: 6px 14px;
     }
 
     .tm-lang-icon {
-        font-size: 0.85rem;
+        font-size: 0.95rem;
     }
 
     .tm-lang-btn {
