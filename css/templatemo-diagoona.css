@@ -403,17 +403,19 @@ textarea {
     left: 20px;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
     z-index: 100;
     opacity: 0.7;
     transition: all 0.3s ease;
     background: rgba(44, 53, 60, 0.9);
-    padding: 8px 12px;
-    border-radius: 20px;
+    padding: 0;
+    border-radius: 50%;
     backdrop-filter: blur(10px);
     cursor: pointer;
     overflow: hidden;
     width: 40px;
+    height: 40px;
 }
 
 .tm-lang-toggle-corner:hover {
@@ -422,15 +424,20 @@ textarea {
 
 .tm-lang-toggle-corner.expanded {
     width: auto;
+    height: auto;
     padding: 8px 16px;
+    border-radius: 20px;
 }
 
 .tm-lang-icon {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     opacity: 0.9;
     line-height: 1;
     cursor: pointer;
     flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .tm-lang-separator {
@@ -544,18 +551,20 @@ textarea {
         right: 15px;
         bottom: auto;
         left: auto;
-        padding: 6px 10px;
+        padding: 0;
         gap: 6px;
         font-size: 0.7rem;
         width: 35px;
+        height: 35px;
     }
 
     .tm-lang-toggle-corner.expanded {
         padding: 6px 14px;
+        height: auto;
     }
 
     .tm-lang-icon {
-        font-size: 0.95rem;
+        font-size: 1rem;
     }
 
     .tm-lang-btn {
