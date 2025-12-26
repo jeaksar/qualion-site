@@ -24,9 +24,14 @@ const updateLogo = (bgIndex) => {
         ? 'images/qualion-logo.png' 
         : 'images/qualion-logo-inverted.png';
     
-    $logo.fadeOut(200, function() {
-        $(this).attr('src', logoSrc).fadeIn(200);
-    });
+    // Only update if the source is actually different
+    if ($logo.attr('src') !== logoSrc) {
+        $logo.css('opacity', '0');
+        setTimeout(() => {
+            $logo.attr('src', logoSrc);
+            $logo.css('opacity', '1');
+        }, 400);
+    }
 }
 
 const setBgOverlay = () => {
