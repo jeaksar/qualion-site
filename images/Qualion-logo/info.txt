@@ -1,0 +1,11 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: Fanwood Text
+font link: https://fonts.google.com/specimen/Fanwood+Text
+font author: Barry Schwartz
+font author site: http://crudfactory.com/
+Slogan Font: Renner-Thin.otf
+
+{"bg":"#290E36","icon":"#BEAE60","font":"#ffffff","slogan":"#ffffff"}
+      
