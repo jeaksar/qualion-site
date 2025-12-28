@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://qualion.se/sitemap.xml
+Sitemap: https://www.qualion.se/sitemap.xml
 
 # Allow major search engines
 User-agent: Googlebot
