@@ -554,48 +554,23 @@ textarea {
     text-decoration: underline;
 }
 
-#cookie-accept, #cookie-deny {
+#cookie-accept {
     padding: 8px 25px;
     font-size: 0.9rem;
 }
 
-#cookie-deny {
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    color: white;
+/* Centered and tighter site header */
+.tm-site-header-centered {
+    text-align: center;
 }
 
-#cookie-deny:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    border-color: rgba(255, 255, 255, 0.5);
+.tm-site-header-centered .tm-sitename {
+    margin-bottom: 0.25rem;
 }
 
-/* Cookie Settings Button */
-.tm-cookie-settings-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: rgba(44, 53, 60, 0.95);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    color: #9CC;
-    font-size: 1.3rem;
-    cursor: pointer;
-    z-index: 9998;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-}
-
-.tm-cookie-settings-btn:hover {
-    background: rgba(44, 53, 60, 1);
-    color: white;
-    transform: scale(1.1);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+.tm-site-header-centered .tm-slogan {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 /* Clickable Qualion logo link */
@@ -656,25 +631,6 @@ textarea {
 
     .tm-cookie-content p {
         min-width: auto;
-    }
-
-    .tm-cookie-settings-btn {
-        bottom: 70px;
-        right: 15px;
-        width: 45px;
-        height: 45px;
-        font-size: 1.1rem;
-    }
-
-    .tm-cookie-buttons {
-        flex-direction: column;
-        width: 100%;
-        gap: 10px;
-    }
-
-    #cookie-accept, #cookie-deny {
-        width: 100%;
-        padding: 10px 20px;
     }
 }
 

@@ -114,33 +114,11 @@ const initCookieConsent = () => {
 
     if (!consent) {
         $('#cookie-consent').fadeIn(300);
-    } else {
-        // Show settings button if choice was made
-        $('#cookie-settings').fadeIn(300);
     }
 
     $('#cookie-accept').click(function() {
         localStorage.setItem('qualion-cookie-consent', 'accepted');
         $('#cookie-consent').fadeOut(300);
-        setTimeout(() => {
-            $('#cookie-settings').fadeIn(300);
-        }, 400);
-    });
-
-    $('#cookie-deny').click(function() {
-        localStorage.setItem('qualion-cookie-consent', 'denied');
-        $('#cookie-consent').fadeOut(300);
-        setTimeout(() => {
-            $('#cookie-settings').fadeIn(300);
-        }, 400);
-    });
-
-    // Cookie settings button - allows user to change their mind
-    $('#cookie-settings').click(function() {
-        $('#cookie-settings').fadeOut(300);
-        setTimeout(() => {
-            $('#cookie-consent').fadeIn(300);
-        }, 400);
     });
 }
 
