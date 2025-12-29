@@ -182,9 +182,8 @@
             <div class="tm-row pt-4">
                 <div class="tm-col-left">
                     <div class="tm-site-header media">
-                        <i class="fas fa-shield-alt fa-3x tm-site-icon"></i>
                         <div class="media-body">
-                            <h1 class="tm-sitename text-uppercase">Qualion</h1>
+                            <h1 class="tm-sitename text-uppercase"><a href="#home" class="tm-sitename-link">Qualion</a></h1>
                             <p class="tm-slogan" data-en="Quality Assurance Excellence" data-sv="Kvalitetssäkring i Framkant">Quality Assurance Excellence</p>
                         </div>
                     </div>
@@ -379,13 +378,19 @@
     <!-- Cookie Consent Banner -->
     <div id="cookie-consent" class="tm-cookie-banner" style="display: none;">
         <div class="tm-cookie-content">
-            <p data-en="We use cookies to improve your experience. By continuing to use this site, you consent to our use of cookies." data-sv="Vi använder cookies för att förbättra din upplevelse. Genom att fortsätta använda denna webbplats godkänner du vår användning av cookies.">We use cookies to improve your experience. By continuing to use this site, you consent to our use of cookies.</p>
+            <p data-en="We use cookies to improve your experience. You can choose to accept or deny our use of cookies." data-sv="Vi använder cookies för att förbättra din upplevelse. Du kan välja att acceptera eller neka vår användning av cookies.">We use cookies to improve your experience. You can choose to accept or deny our use of cookies.</p>
             <div class="tm-cookie-buttons">
                 <a href="privacy.html" class="tm-cookie-link" data-en="Learn More" data-sv="Läs Mer">Learn More</a>
+                <button id="cookie-deny" class="btn btn-secondary" data-en="Deny" data-sv="Neka">Deny</button>
                 <button id="cookie-accept" class="btn btn-primary" data-en="Accept" data-sv="Acceptera">Accept</button>
             </div>
         </div>
     </div>
+
+    <!-- Cookie Settings Button (appears after choice is made) -->
+    <button id="cookie-settings" class="tm-cookie-settings-btn" style="display: none;" title="Cookie Settings / Cookie-inställningar">
+        <i class="fas fa-cookie-bite"></i>
+    </button>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
